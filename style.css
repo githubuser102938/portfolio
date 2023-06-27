@@ -1,0 +1,285 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Roboto+Slab:wght@100&family=Rubik+Puddles&display=swap');
+  *{
+    margin:0;
+    padding:0;
+  }
+
+body {
+    background-image:radial-gradient( rgb(198, 195, 195),  white);
+    background-size:cover;
+    font-weight:600;
+    font-family: 'Roboto Slab', serif;
+}
+h{
+    font-family: 'Teko', sans-serif;
+    font-size:45px;
+    color:rgb(86, 65, 120);
+    text-shadow:0cqmax;
+}
+.fa{
+     padding: 0px 3px 0px 3px;
+    text-align:center;
+    float:inline-end;
+
+}
+
+.header-navbar {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding: 5px 3px 5px 3px;
+
+}
+@media (max-width:125px) {
+    #container{
+        display:block;
+    }
+}
+.navbtn{
+    border:none;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border: 1px solid rgb(67, 65, 65);
+}
+button:hover{
+    opacity:0.2;
+}
+.hamburger-btn {
+    float:right;
+    cursor:pointer;
+    border-radius:3px;
+}
+.navbar-list {
+    display:none;
+    width:100%;
+    list-style:none;
+    background-color:rgb(86, 65, 120);
+    color:white;
+    
+}
+a{
+    color:white;
+    padding:3%;
+    transition:transform;
+    
+}
+a:hover {
+    transform: scale(1.5);
+}
+header{
+    margin-bottom:5%;
+}
+.show {
+    display:block;
+}
+#container {
+    margin-top:20px;
+    margin:auto;
+    width:67%;
+    background-color:rgb(86, 65, 120);
+    display:flex;
+    height:auto;
+    box-shadow:10px 10px 10px rgb(0, 0, 0.2);
+    border-radius:10px;
+    font-size:50px;
+}
+@keyframes mymove {
+    0%   { left:0px; top:0px;}
+  25%  { left:200px; top:0px;}
+  50%  { left:200px; top:200px;}
+  75%  { left:0px; top:200px;}
+  100% { left:0px; top:0px;}
+     
+}
+
+.navbtn-fa-solid {
+    border:none;
+    margin-left:68%;
+    font-size: 20px;
+}
+.nav-list {
+    font-size:larger;
+    padding:2px;
+    list-style:none;
+    cursor:pointer;
+
+}
+a {
+    text-decoration:none;
+
+}
+.animation{
+    position:fixed;
+    opacity:0.2;
+    float:center;
+    display:block;
+    justify-content:center;
+}
+.animation-1 {
+    display: flex;
+}
+.animation-2 {
+    display:flex;
+}
+ .anim {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(145, 124, 179);
+    opacity:none;
+    animation-name : mymove;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    position:relative;
+    margin:30px;
+    margin-left:400px;
+    
+}
+
+.anim2 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(145, 124, 179);
+    opacity:none;
+    animation-name : mymove;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    position:relative;
+    margin:20px;
+    border-radius:20px;
+    margin-left:100px;
+}
+.anim3{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(145, 124, 179);
+    opacity:none;
+    animation-name : mymove;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    position:relative;
+    margin:20px;
+    border-radius:50%;
+
+}
+.anim4{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(145, 124, 179) ;
+    opacity:none;
+    animation-name : mymove;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    position:relative;
+    margin:20px;
+    border-radius:2px;
+}
+.anim5{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(145, 124, 179);
+    opacity:none;
+    animation-name : mymove;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    position:relative;
+    margin:20px;
+    border-radius:20px;
+}
+
+.meriphoto {
+
+    height:35%;
+    width:42%;
+    border: 10px;
+    
+}
+.bio {
+    
+    margin:10%;
+}
+.bio1 {
+    font-size:small;
+
+}
+
+.about , .skills, .achivements , .experience, .projects{
+    background-color:white;
+    box-shadow:5%;
+    width:85%;
+    height:auto;
+    margin:auto;
+    border: 4px rgb(165, 144, 198) inset;
+    margin-top:5%;
+    padding:2%;
+}
+.experience{
+    margin-bottom:5%;
+}
+
+h1{
+    position:relative;
+    -webkit-text-stroke: 1px black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform:uppercase;
+    
+}
+.column {
+    float: left;
+    width:29%;
+    padding: 10px;
+    text-align:center;
+  /* Should be removed. Only for demonstration */
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear:both ;
+  }
+  .column p{
+    font-size:17px;
+  
+  }
+  .column h1{
+    font-size:27px;
+  }
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+  footer {
+    background-color:black;
+    opacity:0.6;
+    margin:auto;
+    color:rgb(67, 65, 65);
+    text-align:center;
+    padding-top:3%;
+    
+  }
+  .footerlist {
+    list-style:none;
+    display:flex;
+    text-align:cenetr;
+    margin-left:40%;
+    padding:3%;
+  }
+  .list-f {
+    padding:2%;
+    cursor:pointer;
+    
+  }
+  .footerp {
+      padding:none;
+  }
+  button{
+    background-color:rgb(86, 65, 120);
+     color:white;
+  }
