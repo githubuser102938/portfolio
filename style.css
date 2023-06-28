@@ -27,26 +27,28 @@ h{
 }
 
 .header-navbar {
-    display:flex;
+     display:flex;
     align-items:center;
     justify-content:space-between;
     padding: 5px 3px 5px 3px;
 
 }
-@media (max-width:125px) {
-    #container{
-        display:block;
-    }
-}
+
 .navbtn{
-    border:none;
+  border:none;
   color: white;
   padding: 5px 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 80%;
   border: 1px solid rgb(67, 65, 65);
+}
+@media screen and (max-width:600px){
+    .navbtn{
+        font-size:30%;
+        
+    }
 }
 button:hover{
     opacity:0.2;
@@ -64,6 +66,7 @@ button:hover{
     color:white;
     
 }
+
 a{
     color:white;
     padding:3%;
@@ -90,6 +93,14 @@ header{
     border-radius:10px;
     font-size:50px;
 }
+@media screen and (max-width: 600px) {
+    #container {
+      width: 74%;
+      display:block;
+      padding:20px;
+    }
+}
+
 @keyframes mymove {
     0%   { left:0px; top:0px;}
   25%  { left:200px; top:0px;}
@@ -101,9 +112,15 @@ header{
 
 .navbtn-fa-solid {
     border:none;
-    margin-left:68%;
     font-size: 20px;
+    float:left;
 }
+@media screen and (max-width:600px) {
+    .navbtn-fa-solid {
+        margin-left:26%;
+    }
+}
+
 .nav-list {
     font-size:larger;
     padding:2px;
@@ -195,11 +212,21 @@ a {
 
 .meriphoto {
 
-    height:35%;
-    width:42%;
-    border: 10px;
+    height:33%;
+    width:40%;
+    border-radius:50%;
+    border: 2px solid black;
+    margin:5% 7% 0 0 ;
     
 }
+@media screen and (max-width: 600px) {
+    .meriphoto {
+        height:62%;
+        width:50%;
+        margin-left:25%;
+        border: 5px double black;
+    }
+  }
 .bio {
     
     margin:10%;
@@ -218,6 +245,11 @@ a {
     border: 4px rgb(165, 144, 198) inset;
     margin-top:5%;
     padding:2%;
+}
+@media screen and (max-width:600px) {
+    .about , .skills, .achivements , .experience, .projects{
+         padding:5%;
+    }
 }
 .experience{
     margin-bottom:5%;
@@ -264,6 +296,12 @@ h1{
     padding-top:3%;
     
   }
+  @media screen and (max-width:600px) {
+      footer{
+        padding-top:14%;
+        margin-top:14%;
+      }
+  }
   .footerlist {
     list-style:none;
     display:flex;
@@ -279,10 +317,18 @@ h1{
   .footerp {
       padding:none;
   }
+  @media screen and (max-width :600px) {
+    .footerp 
+    {
+        margin-top:5%;
+        font-size:50%;
+    }
+}
   button{
     background-color:rgb(86, 65, 120);
      color:white;
   }
-.about p{
-  padding:3%;
-}
+
+ .about p {
+    padding:3%;
+  }
