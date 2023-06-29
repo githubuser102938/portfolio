@@ -113,11 +113,11 @@ header{
 .navbtn-fa-solid {
     border:none;
     font-size: 20px;
-    float:left;
+    float:right;
 }
 @media screen and (max-width:600px) {
     .navbtn-fa-solid {
-        margin-left:26%;
+        float:right;
     }
 }
 
